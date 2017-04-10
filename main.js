@@ -87,6 +87,7 @@ function valueChange() {
 	}
 	console.log(percents);
 	var splus = 100-total;
+	if(splus>0) percents.push(splus);
 	var spn = document.getElementById('surplus');
 
 	//Updates chart data
