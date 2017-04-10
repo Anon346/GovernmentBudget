@@ -35,6 +35,7 @@ html {
 	border-radius: 5px;
 	font-weight: bold;
 	color: #1f1e1e;
+	-moz-appearance:textfield;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
