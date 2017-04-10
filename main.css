@@ -25,12 +25,12 @@ html {
 }
 
 .box {
-	width: 2.3%;
-	height: 30px;
+	width: 2.5vw;
+	height: 2.5vh ;
 	font-size: .9em;
 	text-align: center;
-	margin-left: 10px;
-	margin-top: 10px;
+	margin-left: 0.2%;
+	margin-top: 0.2%;
 	border: transparent;
 	border-radius: 5px;
 	font-weight: bold;
