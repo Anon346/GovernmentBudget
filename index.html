@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel='stylesheet' href='main.css'/>
+		<script src=lib\jquery-3.2.0.min.js></script>
+		<script src=main.js></script>
+		<script src=lib\Chart.bundle.min.js></script>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Surplus:</h1> <span id='surplus'>0%</span><br/>
+		<h1>Education:<br/>
+			<input class=slide value=18 min=1 max=90 id='ed' type=range onchange=valueChange(); oninput=$('#edVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#ed')[0].value=value; id='edVal' value=18></input>
+
+		<h1>Post-Secondary Education:<br/>
+			<input class=slide value=16 min=1 max=90 id='posted' type=range onchange=valueChange() oninput=$('#postedVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#posted')[0].value=value; id='postedVal' value=16></input>
+
+		<h1>Fiscal Policy:<br/>
+			<input class=slide value=15 min=1 max=90 id='fsclpol' type=range onchange=valueChange(); oninput=$('#fsclpolVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#fsclpol')[0].value=value; id='fsclpolVal' value=15></input>
+
+		<h1>Health:<br/>
+			<input class=slide value=12 min=1 max=90 id='hlth' type=range onchange=valueChange(); oninput=$('#hlthVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#hlth')[0].value=value; id='hlthVal' value=12></input>
+
+		<h1>Environment:<br/>
+			<input class=slide value=11 min=1 max=90 id='env' type=range onchange=valueChange(); oninput=$('#envVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#env')[0].value=value; id='envVal' value=11></input>
+
+		<h1>Social Services:<br/>
+			<input class=slide value=8 min=1 max=90 id='socserv' type=range onchange=valueChange(); oninput=$('#socservVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#socserv')[0].value=value; id='socservVal' value=8></input>
+
+		<h1>Natural Resources:<br/>
+			<input class=slide value=7 min=1 max=90 id='natres' type=range onchange=valueChange(); oninput=$('#natresVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#natres')[0].value=value; id='natresVal' value=7></input>
+
+		<h1>Sports, Culture & Arts:<br/>
+			<input class=slide value=6 min=1 max=90 id='sca' type=range onchange="valueChange();" oninput=$('#scaVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#sca')[0].value=value; id='scaVal' value=6></input>
+
+		<h1>Transport Infrastructure:<br/>
+			<input class=slide value=5 min=1 max=90 id='transinfa' type=range onchange=valueChange(); oninput=$('#transinfaVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#transinfa')[0].value=value; id='transinfaVal' value=5></input>
+
+		<h1>Public Safety:<br/>
+			<input class=slide value=2 min=1 max=90 id='pubsafe' type=range onchange=valueChange();	 oninput=$('#pubsafeVal')[0].value=value></input><input type="number" class=box onchange=valueChange(); oninput=$('#pubsafe')[0].value=value; id='pubsafeVal' value=2></input>
+
+		<div id="canvas-holder"><canvas id="chart"></canvas></div>
+
+	</body>
+</html>
